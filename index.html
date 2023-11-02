@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Alexander Luis Mitchell</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+}
+
+.name {
+  color: rgb(100, 100, 100);
+}
+
+p.body {
+  color: rgb(100, 100, 100);
+  line-height: 1.5;
+  font-size: larger;
+  img {
+  width: 50%;
+  height: auto;
+  }
+}
+
+p.publications {
+  color: rgb(100, 100, 100);
+}
+
+dl.list {
+  color: rgb(50, 50, 50);
+}
+
+/* Style the side navigation */
+.sidenav {
+  height: 100%;
+  width: 400px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(9, 14, 44);
+  overflow-x: hidden;
+}
+
+
+/* Side navigation links */
+.sidenav a {
+  color: rgb(232, 232, 223);
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color on hover */
+.sidenav a:hover {
+  background-color: rgb(232, 232, 223);
+  color: rgb(9, 14, 44);;
+}
+
+/* Sidenav no link */
+.sidenav p {
+  color: rgb(232, 232, 223);
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Style the content */
+.content {
+  margin-left: 400px;
+  padding-left: 50px;
+  width: 50.0%;
+}
+</style>
+
+
+</head>
+<body>
+
+<div class="sidenav">
+  <img src="images/main_face.jpg" alt="Alex's face", width="450", height="450">
+  <p>Email Contact: <br>
+    <a href="mitch@robots.ox.ac.uk">mitch@robots.ox.ac.uk</a>
+  Useful Links: <br>
+    <a href="pdfs/Resume_AlexMitchell.pdf">CV</a><br>
+    <a href="https://scholar.google.com/citations?user=7YV2TGMAAAAJ&hl=en">Google Scholar</a> <br>
+    <a href="https://www.linkedin.com/in/alexander-mitchell-9349029b/">Linkedin</a> <br>
+  </p>
+</div>
+
+<div class="content">
+  <h2 class="name">Research Scientist</h2>
+
+  <h1>Alexander Luis Mitchell</h1>
+
+  <p class="body">
+    I am a PhD student at the University of Oxford and have just submitted my thesis in latent-space planning for quadruped locomotion.
+    My supervisors are Prof. Ingmar Posner and Prof. Ioannis Havoutis at the Oxford Robotics Institute.
+  </p>
+
+  <p class="body">
+    My research interests are:
+    <dl class="list">
+      <dd>Robot manipulation and locomotion in confined and cluttered environments</dd><br>
+      <dd>Generative modeling for robotic planning</dd><br>
+      <dd>Brain-inspired research for robotics </dd><br>
+      <dd>Robust control and planning under uncertainty</dd>
+    </dl>  
+
+  </p>
+  
+  <!-- <p class="body">
+    I am a DPhil student at Oxford University in my final year researching deep generative modelling for planning and optimal control of complex dynamic robotics. 
+    I am supervised by Prof. Ingmar Posner and Dr. Ioannis Havoutis at the Oxford Robotics Institute.
+    My focus is developing innovative approaches to planning for systems with high degrees of freedom which interact with their environments. 
+    I also believe that deployment of these novel solutions is a necessity to validate their utility and bridge the gap between the theoretical and the practical.
+  </p>
+
+  <p class="body">
+    So far my DPhil. has focused on Variational Auto-Enoders to model and express correlations in robot locomotion. 
+    This is done via a learned latent-space in which we bestow useful structure and encourage disentanglement.
+    This results in complex manoeuvres such as quadruped locomotion becoming a traversal of our structured latent space. 
+    Furthermore, the mechanism for this traversal is tantalisingly similar to structures found in nature which govern rhythmic behaviour such as breathing and locomotion.
+  </p>
+
+  <p class="body">
+    My interests outside of work include music, art and sculpture.  
+    Most recently I built a tensegrity coffee table and have dabbled in kinetic sculpture. 
+    Specifically, I designed and created an abstract work representing a manta ray soaring through the ocean.
+  </p> -->
+
+
+  <p class="body">
+    An example of a structured latent-space for multiple gaits and continuous gait transition: 
+  </p>
+  <img src="images/multi_gaits_small.gif", alt=" Latent Space Planner", width="100%">
+
+
+  <h2>Publications and submitted work</h2>
+
+  <p class="publications">
+    Gaitor: Learning A Unified Representation For Continuous Gait Transition And Terrain Traversal For Quadruped Robots <br>
+    Submitted to ICRL, 2024 <br>
+    A. Mitchell, W. Merkt, A. Papatheodorou, I. Havoutis, I. Posner
+  </p>
+
+
+  <p class="publications">
+    Towards Agility: A Momentum Aware Trajectory Optimisation Framework using Full-Centroidal
+    Dynamics Implicit Inverse Kinematics <br>
+    Submitted to ICRA, 2024 <br>
+    A. Papatheodorou, W. Merkt, A. Mitchell, I. Havoutis
+  </p>
+
+  <p class="publications">
+    VAE-Loco: Versatile Quadruped Locomotion by Learning a Disentangled Gait Representation <br>
+    IEEE Transactions on Robotics (T-RO), 2023 <br>
+    A. Mitchell, W. Merkt, M. Geisert, S. Ganagapurwala, M. Engelcke, O. Parker Jones, I. Havoutis, I. Posner
+  </p>
+
+  <p class="publications">
+    From Primates to Robots: Emerging Oscillatory Latent-Space Dynamics for Sensorimotor Control <br>
+    Conference on Cognitive Computational Neuroscience, (CCN) 2023 <br>
+    A. Mitchell, O. Parker Jones, J. Yamada, W. Merkt, I. Havoutis, I. Posner 
+  </p>
+
+  <p class="publications">
+    Brain-like latent dynamics emerge in robot systems during walking and reaching <br>
+    Submitted to Nature: Science Reports, 2022 <br>
+    O. Parker Jones*, A. Mitchell*, J. Yamada*, W. Merkt, M. Geisert, I. Havoutis, I. Posner 
+  </p>
+  
+  <p class="publications">
+    Next Steps: Learning a Disentangled Gait Representation for Versatile Quadruped Locomotion <br>
+    Under review: IEEE Robotics and Automation Letters (RA-L), 2022 <br>
+    A. Mitchell, W. Merkt, M. Geisert, S. Ganagapurwala, M. Engelcke, O. Parker Jones, I. Havoutis, I. Posner
+  </p>
+
+  <p class="publications">
+    First Steps: Latent-Space Control with Semantic Constraints for Quadruped Locomotion <br>
+    IEEE Intelligent Robots and Systems (IROS), 2020 <br>
+    A. Mitchell, M. Engelcke, O. Parker Jones, S. Ganagapurwala, O. Melon, D. Surovik, I. Havoutis, I. Posner
+  </p>  
+
+  <p class="publications">Guided Constrained Policy Optimization for Dynamic Quadrupedal Robot Locomotion <br>
+    S Gangapurwala, A Mitchell, I Havoutis <br>
+    IEEE Robotics and Automation Letters 5 (2), 3642-3649
+ </p>
+
+</div>
+
+</body>
+</html>
