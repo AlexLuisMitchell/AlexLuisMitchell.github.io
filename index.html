@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
 <title>Alexander Luis Mitchell</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1">
 <style>
 * {
   box-sizing: border-box;
@@ -37,21 +36,17 @@ dl.list {
   color: rgb(50, 50, 50);
 }
 
-/* Style the side navigation */
-.sidenav {
-  height: 100%;
-  max-width: 25%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
+/* Style for the left panel */
+.left {
   background-color: rgb(9, 14, 44);
-  overflow-x: hidden;
+  float: left;
+  width: 22%; /* The width is 20%, by default */
+  height: 100%;
 }
 
 
 /* Side navigation links */
-.sidenav a {
+.left a {
   color: rgb(232, 232, 223);
   padding: 16px;
   text-decoration: none;
@@ -59,33 +54,50 @@ dl.list {
 }
 
 /* Change color on hover */
-.sidenav a:hover {
+.left a:hover {
   background-color: rgb(232, 232, 223);
   color: rgb(9, 14, 44);;
 }
 
 /* Sidenav no link */
-.sidenav p {
+.left p {
   color: rgb(232, 232, 223);
   padding: 16px;
   text-decoration: none;
   display: block;
 }
 
-/* Style the content */
-.content {
-  margin-left: 25%;
-  padding-left: 50px;
-  width: 50.0%;
+/* Style for main content */
+.main {
+  padding: 20px;
+  float: left;
+  width: 50%; /* The width is 60%, by default */
 }
+
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width: 800px) {
+  .left, .main {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .left {
+    position: fixed;
+  }
+  .main {
+    margin-left: 25%;
+  }
+}
+
 </style>
 
 
 </head>
 <body>
 
-<div class="sidenav">
-  <img src="images/main_face.jpg" alt="Alex's face", width="450", height="450">
+<div class="left">
+  <img src="images/main_face.jpg" alt="Alex's face", width="100%", height=auto>
   <p>Email Contact: <br>
     <a href="mailto:mitch@robots.ox.ac.uk">mitch@robots.ox.ac.uk</a>
   Useful Links: <br>
@@ -95,7 +107,7 @@ dl.list {
   </p>
 </div>
 
-<div class="content">
+<div class="main">
   <h2 class="name">Research Scientist</h2>
 
   <h1>Alexander Luis Mitchell</h1>
