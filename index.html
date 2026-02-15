@@ -15,7 +15,7 @@
 
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif; /* Modern font */
+  font-family: 'Inter', sans-serif;
   font-size: 16px;
   color: #333;
   line-height: 1.6;
@@ -52,9 +52,9 @@ h3.role { color: #666; font-weight: 400; font-size: 1.2rem; margin-bottom: 1.5re
 .sidebar {
   background-color: rgb(9, 14, 44);
   color: #e8e8df;
-  width: 280px; /* Fixed width */
+  width: 280px;
   padding: 40px 20px;
-  flex-shrink: 0; /* Prevents sidebar from shrinking */
+  flex-shrink: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -65,7 +65,7 @@ h3.role { color: #666; font-weight: 400; font-size: 1.2rem; margin-bottom: 1.5re
   width: 160px;
   height: 160px;
   object-fit: cover;
-  border-radius: 50%; /* Circular image */
+  border-radius: 50%;
   border: 4px solid rgba(255,255,255,0.2);
   margin-bottom: 20px;
 }
@@ -95,7 +95,7 @@ h3.role { color: #666; font-weight: 400; font-size: 1.2rem; margin-bottom: 1.5re
   flex-grow: 1;
   padding: 50px 60px;
   background-color: #fff;
-  max-width: 900px; /* Prevents lines getting too long on huge screens */
+  max-width: 900px;
 }
 
 /* Media handling */
@@ -104,6 +104,13 @@ h3.role { color: #666; font-weight: 400; font-size: 1.2rem; margin-bottom: 1.5re
   aspect-ratio: 16 / 9;
   margin: 20px 0;
   border-radius: 8px;
+  display: block;
+}
+
+.video-caption {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-weight: 500;
 }
 
 .project-img {
@@ -205,14 +212,45 @@ ul.interests li {
       I completed my DPhil at the <a href="https://ori.ox.ac.uk/">Oxford Robotics Institute</a> under Prof. Posner and <a href="https://eng.ox.ac.uk/people/ioannis-havoutis/">Prof. Ioannis Havoutis</a>.
     </p>
 
+    <h2>Dual-Arm Manipulation & Planning</h2>
+    <p class="video-caption">
+      My current research focuses on <strong>reactive assembly</strong> of tight-tolerance components. 
+      The video below demonstrates low-level compliant control integrated with high-level planning using energy-based models. 
+      The system handles both assistive and adversarial human interactions in real-time.
+    </p>
     <iframe 
       class="responsive-video"
-      src="https://www.youtube.com/embed/3N5W3Z_OqWU?si=Wq_PsDdchF53Ugv-&amp;start=374" 
+      src="https://www.youtube.com/embed/Kw99FtEhZB8" 
       title="YouTube video player" 
       frameborder="0" 
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
       allowfullscreen>
     </iframe>
+
+    <h3>Impact & Outreach</h3>
+    <p class="video-caption">
+      Our platform, "Frank," serves as a testbed for research spanning elderly care, world models, and small-batch manufacturing. 
+      Recently, we demonstrated these capabilities to the Vice-Chancellor of the University of Oxford.
+    </p>
+    <iframe 
+      class="responsive-video"
+      src="https://www.youtube.com/embed/3N5W3Z_OqWU?start=374" 
+      title="YouTube video player" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      allowfullscreen>
+    </iframe>
+
+    <h2>Locomotion & Representation Learning</h2>
+    <p>
+      During my DPhil, I explored how structured latent spaces can enable versatile robot locomotion. 
+      By learning a unified representation, we can generate multiple gaits and continuous transitions over uneven terrain.
+    </p>
+    
+    <p style="margin-top: 20px; font-weight: 500;">
+      Visualization of latent-space traversal for gait switching:
+    </p>
+    <img class="project-img" src="images/multi_gaits_small.gif" alt="Latent Space Planner Visualization">
 
     <h3>Research Interests</h3>
     <ul class="interests">
@@ -222,11 +260,6 @@ ul.interests li {
       <li>Brain-inspired research for robotics</li>
     </ul>
 
-    <p>
-      <strong>Structured latent-space for multiple gaits:</strong>
-    </p>
-    <img class="project-img" src="images/multi_gaits_small.gif" alt="Latent Space Planner Visualization">
-
     <h2>Selected Publications</h2>
 
     <div class="pub-item">
@@ -234,7 +267,7 @@ ul.interests li {
       <div class="pub-venue">Conference of Robot Learning (CoRL), 2024</div>
       <div class="pub-authors">A. Mitchell, W. Merkt, A. Papatheodorou, I. Havoutis, I. Posner</div>
       <div class="pub-links">
-        <a href="#">[PDF]</a> <a href="#">[Code]</a>
+        <a href="https://arxiv.org/abs/2405.19452">[PDF]</a>
       </div>
     </div>
 
@@ -243,7 +276,7 @@ ul.interests li {
       <div class="pub-venue">Nature: Scientific Reports, 2024</div>
       <div class="pub-authors">O. Parker Jones*, A. Mitchell*, J. Yamada*, et al.</div>
       <div class="pub-links">
-        <a href="#">[PDF]</a>
+        <a href="https://www.nature.com/articles/s41598-024-61610-5">[PDF]</a>
       </div>
     </div>
 
@@ -252,11 +285,11 @@ ul.interests li {
       <div class="pub-venue">IEEE Transactions on Robotics (T-RO), 2023</div>
       <div class="pub-authors">A. Mitchell, W. Merkt, M. Geisert, et al.</div>
       <div class="pub-links">
-        <a href="#">[PDF]</a> <a href="#">[Video]</a>
+        <a href="https://ieeexplore.ieee.org/document/10197536">[PDF]</a> 
       </div>
     </div>
 
-    </main>
+  </main>
 </div>
 
 </body>
